@@ -24,6 +24,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#Feedbacks">Feedbacks</a>
                   </li>
+                  <li class="nav-item">
+                    <button class="show-login" type="button">Login</button>
+                  </li>
                     </div>
                 </ul>
 
@@ -31,7 +34,7 @@
 
           
         </header>
-        <div data-spy="scroll" data-target="#navbar" data-offset="10">
+        <div data-spy="scroll" data-target="#navbar">
           <h1 class="">El'Pantaroto</h1>
           <p>Imagine um grão de café que não passou pelo calor intenso e prolongado do processo de torra escura. 
             Esse café, com seus tons mais claros e nuances suaves, oferece uma experiência única aos amantes da bebida. Ao ser moído, libera aromas delicados e uma acidez leve. 
@@ -48,17 +51,20 @@
                 <h3>E como nossos serviços funcionam?</h3>
                 <p>Trabalhamos com um serviço de assinaturas no qual você assina e recebe diariamente um pacote de grãos selecionados diariamente por nós ou algum especifico que você queira, além disso também filtros personalizados feitos de tecido de algodão cru 100%. 
                 As quantidades podem ser alteradas pelo nosso aplicativo. Além disso, o cliente também pode escolher se deseja receber seu produto diariamente ou semanalmente.</p>
-                <a class="row no-gutters justify-content-center"><button id="show-login">Assinar</button></a>
-                <div class="janela-login">
-                  <div class="hiden-login">&times;</div>
+                <a class="row no-gutters justify-content-center"><button id="show-signup">Assinar</button></a>
+                <div id="fade"></div>
+                <div class="janela-signup">
+                  <div class="hiden-signup">&times;</div>
                     <h2>Registre-se</h2>
                     <form>
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Informe seu nome."  required>
+                        <input type="text" id="nome" name="nome" placeholder="Informe seu nome.">
+                        <label for="login">Login:</label>
+                        <input type="text" id="login" name="login" placeholder="Crie seu login">
                         <label for="cpf">CPF:</label>
-                        <input type="text" id="cpf" name="cpf" title="Digite um CPF válido (XXX.XXX.XXX-XX)" placeholder="XXX.XXX.XXX-XX" maxlength="14" required>
+                        <input type="text" id="cpf" name="cpf" title="Digite um CPF válido (XXX.XXX.XXX-XX)" placeholder="XXX.XXX.XXX-XX" maxlength="14">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="example.org.com.br" required>
+                        <input type="email" id="email" name="email" placeholder="example.org.com.br" >
                         <label for="password">Senha:</label>
                         <input type="password" name="password" id="password" placeholder="Informe sua senha.">
                         <label for="confirm-password">Confirme sua senha:</label>
@@ -68,14 +74,27 @@
                           <label for="show-password">Mostrar senha</label>
                         </div>
                         <label for="sexo">Sexo:</label>
-                        <input type="radio" id="masc" name="sexo" value="masculino" required>
+                        <input type="radio" id="masc" name="sexo" value="masculino">
                         <label for="masc">Masculino</label>
                         <input type="radio" id="fem" name="sexo" value="feminino">
                         <label for="fem">Feminino</label>
                         <input type="submit" value="Enviar" id="submit">
                     </form>
+                   </div>
+                   <div class="janela-login">
+                    <div class="hiden-login">&times;</div>
+                    <h2>Entrar</h2>
+                    <label for="login">Login:</label>
+                    <input type="text" name="login" placeholder="Informe seu login.">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" placeholder="Informe sua senha.">
+                    <div class="mostrar-senha">
+                      <input type="checkbox" id="show-password1">
+                      <label for="show-password1">Mostrar senha</label>                      
+                  </div>
+                  <input type="submit" value="Logar" id="submit-login">
 
-                </div>
+              </div>
     <section id="Feedbacks">
         <div class="row no-gutters justify-content-center">
             <h3>Feedbacks</h3>
